@@ -1,6 +1,6 @@
 Name:		yencode
 Version:	0.46
-Release:	%mkrel 4
+Release:	%mkrel 5
 Summary:	Usenet yEnc encoder,decoder and poster
 Url:		http://www.yencode.org
 Source:		http://prdownloads.sourceforge.net/yencode/yencode-0.46.tar.bz2
