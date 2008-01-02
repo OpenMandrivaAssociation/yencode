@@ -6,6 +6,7 @@ Url:		http://www.yencode.org
 Source:		http://prdownloads.sourceforge.net/yencode/yencode-0.46.tar.bz2
 License:	GPL
 Group:		Networking/News
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 
