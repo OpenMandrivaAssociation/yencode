@@ -9,7 +9,6 @@ Group:		Networking/News
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
-
 yencode is an encoder, decoder, and  posting  package  for  the  popular
 Usenet yEnc encoding format. It features the ability to encode single or
 multipart archives, a smart decoder  which  can  decode  multiple  files
