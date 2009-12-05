@@ -1,10 +1,11 @@
 Name:		yencode
 Version:	0.46
-Release:	%mkrel 9
+Release:	%mkrel 10
 Summary:	Usenet yEnc encoder,decoder and poster
 Url:		http://www.yencode.org
 Source:		http://prdownloads.sourceforge.net/yencode/yencode-0.46.tar.bz2
-License:	GPL
+Patch0:		yencode-0.46-mdv-fix-str-fmt.patch
+License:	GPLv2+
 Group:		Networking/News
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
@@ -19,7 +20,7 @@ utility. It is fully compliant with the yEnc specifications.
 
 %prep
 %setup -q
-
+%patch0 -p1 -b .strfmt
 
 %build
 %configure
