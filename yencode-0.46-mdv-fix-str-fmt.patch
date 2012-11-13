@@ -1,0 +1,12 @@
+diff -p -up yencode-0.46/src/ypost/sock.c.strfmt yencode-0.46/src/ypost/sock.c
+--- yencode-0.46/src/ypost/sock.c.strfmt	2009-12-05 17:17:09.000000000 +0100
++++ yencode-0.46/src/ypost/sock.c	2009-12-05 17:25:29.000000000 +0100
+@@ -387,7 +387,7 @@ sock_puts_meter_fd(int fd, const unsigne
+ 		if (opt_debug)
+ 			sockdebug(Y_SOCKDEBUG_SEND, (unsigned char *)(data+offset), rv);
+ 		offset += rv;
+-		meter(current + offset, total, desc);
++		meter(current + offset, total, "%s", desc);
+ 	} while (offset < datalen);
+ 
+ 	free(data);
